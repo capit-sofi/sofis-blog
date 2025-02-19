@@ -9,7 +9,7 @@ import blog from './models/models.js'
 const app = express();
 
 dotenv.config()
-const port = process.env.port || 3000;
+const port =  3000;
 const mongo_url = process.env.mongo_url;
 
 mongoose.connect(mongo_url).then(() => {
