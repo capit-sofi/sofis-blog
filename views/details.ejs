@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/header.ejs') %>
+<body>
+  
+  <%- include('./partials/nav.ejs') %>
+  <div class="details content">
+    
+    <h2><%= data.title%></h2>
+
+    <div class="content">
+      <p><%= data.body%></p>
+    </div>
+    
+    <form action="/delete/<%=data.id %>" method="post" >
+      
+      <button name="deleteItemId" class="delete" value="<%=data.id %>">Delete</button>
+
+    </form>
+
+  </div>
+  <%- include('./partials/footer.ejs') %>
+
+</body>
+</html>
